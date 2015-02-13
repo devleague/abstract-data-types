@@ -76,19 +76,27 @@ describe('LinkedList', function () {
     var linkedList, node, nextNode;
     beforeEach(function() {
       linkedList = new LinkedList();
-      node = new Node();
-      nextNode = new Node();
+      node = new Node(11);
+      nextNode = new Node(13);
     });
 
     it('should have a `remove` method', function() {
       expect(linkedList.remove).to.be.a('function');
     });
 
-    it('should remove the n-th Node object from the LinkedList', function() {
+    it('should remove the first Node object from the LinkedList', function() {
       linkedList.add(node);
       linkedList.add(nextNode);
       linkedList.remove(0);
       expect(linkedList.head).to.equal(nextNode);
+    });
+
+    it('removes the n-th Node object from the LinkedList', function() {
+      linkedList.add(node);
+      linkedList.add(nextNode);
+      linkedList.remove(1);
+      expect(linkedList.head).to.equal(node);
+      expect(linkedList.head.getNext()).not.to.equal(nextNode);
     });
   });
 
