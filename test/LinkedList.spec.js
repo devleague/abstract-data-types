@@ -106,19 +106,19 @@ describe('LinkedList', function () {
 
     it('should increase as Node objects are added', function() {
       linkedList.add(node);
-      expect(LinkedList.length).to.equal(1);
+      expect(linkedList.length).to.equal(1);
       linkedList.add(nextNode);
-      expect(LinkedList.length).to.equal(2);
+      expect(linkedList.length).to.equal(2);
     });
 
     it('should decrease as Node objects are removed', function() {
       linkedList.add(node);
       linkedList.add(nextNode);
-      expect(LinkedList.length).to.equal(2);
+      expect(linkedList.length).to.equal(2);
       linkedList.remove(0);
-      expect(LinkedList.length).to.equal(1);
+      expect(linkedList.length).to.equal(1);
       linkedList.remove(0);
-      expect(LinkedList.length).to.equal(0);
+      expect(linkedList.length).to.equal(0);
     });
 
   });
