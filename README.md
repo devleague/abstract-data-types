@@ -1,4 +1,4 @@
-# Advanced Data Types
+# Abstract Data Types
 
 Please fork this repository and implement the files in `lib` folder.
 
