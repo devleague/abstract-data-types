@@ -25,11 +25,11 @@ describe('Node', function () {
     });
 
     it('should throw an error if a non-Node value is passed in', function() {
-      expect(node.setNext.bind(null, 42)).to.throw(Error);
+      expect(node.setNext.bind(node, 42)).to.throw(Error);
     });
 
     it('should set a reference to another Node', function() {
-      expect(node.setNext.bind(null, nextNode)).to.not.throw(Error);
+      expect(node.setNext.bind(node, nextNode)).to.not.throw(Error);
     });
   });
 

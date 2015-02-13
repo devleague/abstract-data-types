@@ -31,11 +31,11 @@ describe('LinkedList', function () {
     });
 
     it('should throw an error if a non-Node value is passed in', function() {
-      expect(linkedList.add.bind(null, 42)).to.throw(Error);
+      expect(linkedList.add.bind(linkedList, 42)).to.throw(Error);
     });
 
     it('should set the first Node object as the head', function() {
-      expect(linkedList.add.bind(null, node)).to.not.throw(Error);
+      expect(linkedList.add.bind(linkedList, node)).to.not.throw(Error);
       expect(linkedList.head).to.equal(node);
     });
 
