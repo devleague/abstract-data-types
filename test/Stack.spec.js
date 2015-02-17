@@ -51,7 +51,7 @@ describe('Stack', function() {
 
     it('decreases the length by one', function() {
       stack.push('abacadabba');
-      expect(stack.pop).to.decrease(stack, 'length');
+      expect(stack.pop.bind(stack)).to.decrease(stack, 'length');
       expect(stack.length).to.equal(0);
     });
   });
