@@ -57,6 +57,12 @@ describe('Stack', function() {
   });
 
   describe('peek', function() {
+    var stack;
+
+    beforeEach(function() {
+      stack = new Stack();
+    });
+
     it('has a peek method', function() {
       expect(stack.peek).to.be.a('function');
     });
