@@ -39,7 +39,7 @@ describe('Stack', function() {
     });
 
     it('throws an error if we pop an empty stack', function() {
-      expect(stack.pop).to.throw(Error);
+      expect(stack.pop.bind(stack)).to.throw(Error);
     });
 
     it('returns the value on top of the stack', function() {
@@ -61,7 +61,7 @@ describe('Stack', function() {
     });
 
     it('throws an error if we peek an empty stack', function() {
-      expect(stack.peek).to.throw(Error);
+      expect(stack.peek.bind(stack)).to.throw(Error);
     });
 
     it('returns the value on top of the stack', function() {

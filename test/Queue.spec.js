@@ -39,7 +39,7 @@ describe('Queue', function() {
     });
 
     it('throws an error if we dequeue an empty queue', function() {
-      expect(queue.dequeue).to.throw(Error);
+      expect(queue.dequeue.bind(queue)).to.throw(Error);
     });
 
     it('returns the value at the end of the queue', function() {
