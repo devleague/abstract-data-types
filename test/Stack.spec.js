@@ -1,4 +1,5 @@
 var Stack = require('..').Stack;
+var LinkedList = require('..').LinkedList;
 
 var chai = require('chai');
 var expect = chai.expect;
