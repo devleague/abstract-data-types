@@ -7,10 +7,12 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/index.js"
   },
   "devDependencies": {
     "chai": "~2.0.0",
-    "mocha": "~2.1.0"
+    "mocha": "~2.1.0",
+    "sinon": "^1.12.2",
+    "mocha-clean": "~0.4.0"
   }
 }
