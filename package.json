@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/index.js"
+    "test": "mocha test/index.js",
+    "test:tree": "mocha test/TreeNode.spec.js"
   },
   "devDependencies": {
     "chai": "~2.0.0",
